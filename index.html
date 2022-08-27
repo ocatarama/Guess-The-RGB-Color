@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+
+        <!-- Adobe fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/acm5uig.css">
+
+        <!-- jQuerry -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="left">
+            <h1 class="left-title">Guess The Color</h1>
+
+            <div class="rules">
+                <div class="triangle"></div>
+
+                <p>Rules are simple! In the header there is a RGB code written on the orange background.</p>
+                <p>Six different colors are shown on the game board. Guess what color does the code from the header indicates!</p>
+                <p>Every right guess grants you 10 points and sends you to another level. Every wrong guess takes 5 points from you.</p>
+                <p>When you guess wrong, the box you pressed will disappear and you will have the chance to take another guess. But watch your points!</p>
+                <p>Press the New Game button to start or refresh the game.</p>
+                <p>Have fun!</p>
+            </div>
+
+            <div class="hover-me"><<< Hover me!</div>
+        </div>
+
+        <div class="right">
+            <div class="container">
+                <div class="header">
+                    <h1 class="header-title">Guess the RGB Color!</h1>
+
+                    <h2 class="header-rgb">
+                        RGB(
+                        <span id="red" style="color: red;">0</span>,
+                        <span id="green" style="color: green;">0</span>,
+                        <span id="blue" style="color: blue;">0</span>
+                        )
+                    </h2>
+
+                    <h3>Made with JavaScript</h3>
+
+                    <div class="header-scoreboard">
+                        <div class="header-scoreboard--guessed">Guessed: <span id="guessed">0</span></div>
+                        <div class="header-scoreboard--missed">Missed: <span id="missed">0</span></div>
+                        <div class="header-scoreboard--points">Total Points: <span id="points">0</span></div>
+                    </div>
+
+                </div>
+
+                <div class="game-container">
+                    <div class="game-board">
+                        <button class="game-board-box"></button>
+                        <button class="game-board-box"></button>
+                        <button class="game-board-box"></button>
+                        <button class="game-board-box"></button>
+                        <button class="game-board-box"></button>
+                        <button class="game-board-box"></button>
+                    </div>
+
+                    <div class="game-buttons">
+                        <button class="game-buttons--newGame" id="newGame">New Game</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body >
+
+</html>
