@@ -14,7 +14,7 @@ const boxes = Array.from(document.getElementsByClassName("game-board-box"));
 var solution = 0;
 
 $("#newGame").on("click", () => {
-    /* Reseting the scoreboard */
+    /* Resetting the scoreboard */
     points.innerHTML = "0";
     guessed.innerHTML = "0";
     missed.innerHTML = "0";
